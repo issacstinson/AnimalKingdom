@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -535,7 +535,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8066710988555422126}
   m_PrefabAsset: {fileID: 0}
---- !u!19719996 &413250186
+--- !u!19719996 &413250184
 TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1347,6 +1347,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495440501}
   m_CullTransparentMesh: 0
+--- !u!1 &1705142364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4826203233056784084, guid: 3141f16b47225a1478921f54e10798a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4826203234202918307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1705142371
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705142364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.15}
+    oldSize: {x: 0.43, y: 0.7}
+    newSize: {x: 1, y: 0.9921875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.4, y: 0}
+      - {x: 0, y: -0.2}
+      - {x: -0.4, y: 0}
+      - {x: 0, y: 0.2}
 --- !u!1 &1744740253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1853,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Charac
       objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784088, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784089, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826203233056784090, guid: 3141f16b47225a1478921f54e10798a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1922,7 +1997,27 @@ PrefabInstance:
     - target: {fileID: 4826203233056784095, guid: 3141f16b47225a1478921f54e10798a7,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784095, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784095, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784095, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826203233056784095, guid: 3141f16b47225a1478921f54e10798a7,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3141f16b47225a1478921f54e10798a7, type: 3}
@@ -1993,6 +2088,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 8066710988951894818, guid: d6b7fdf04c2e9f24697a35469e7dfbd8,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066710988951894818, guid: d6b7fdf04c2e9f24697a35469e7dfbd8,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066710988951894818, guid: d6b7fdf04c2e9f24697a35469e7dfbd8,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8066710988951894821, guid: d6b7fdf04c2e9f24697a35469e7dfbd8,
         type: 3}
       propertyPath: m_IsTrigger
@@ -2006,7 +2116,7 @@ PrefabInstance:
     - target: {fileID: 8066710988951894825, guid: d6b7fdf04c2e9f24697a35469e7dfbd8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b7fdf04c2e9f24697a35469e7dfbd8, type: 3}
