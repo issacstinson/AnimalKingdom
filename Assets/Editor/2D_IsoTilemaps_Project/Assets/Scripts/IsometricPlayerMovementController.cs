@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveSystem : MonoBehaviour
+public class IsometricPlayerMovementController : MonoBehaviour
 {
 
-    public float movementSpeed = 64f;
+    public float movementSpeed = 1f;
     IsometricCharacterRenderer isoRenderer;
 
     Rigidbody2D rbody;
