@@ -13,20 +13,21 @@ public class MoveSystem : MonoBehaviour
         rbody = GetComponent<Rigidbody2D>();
     }
     // Update is called once per frame
+
     void Update()
     {
         Vector2 currentPos = rbody.position;
         if (Input.GetKey(KeyCode.D) == true)
         {
-            if(Input.GetKeyDown(KeyCode.W)==true)
-            { 
-                Vector2 inputVector = new Vector2(2,1);
+            if (Input.GetKeyDown(KeyCode.W) == true)
+            {
+                Vector2 inputVector = new Vector2(2, 1);
                 Vector2 movement = inputVector * movementSpeed;
                 Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
                 rbody.MovePosition(newPos);
             }
-            if(Input.GetKeyDown(KeyCode.S)==true)
-            { 
+            if (Input.GetKeyDown(KeyCode.S) == true)
+            {
                 Vector2 inputVector = new Vector2(2, -1);
                 Vector2 movement = inputVector * movementSpeed;
                 Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
@@ -84,19 +85,5 @@ public class MoveSystem : MonoBehaviour
                 rbody.MovePosition(newPos);
             }
         }
-        /*
-     {
-        Vector2 currentPos = rbody.position;
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        Vector2 inputVector = new Vector2(horizontalInput, verticalInput);
-        inputVector = Vector2.ClampMagnitude(inputVector, 1);
-        Vector2 movement = inputVector * movementSpeed;
-        Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
-        isoRenderer.SetDirection(movement);
-        rbody.MovePosition(newPos);
-    }
-        */
     }
 }
