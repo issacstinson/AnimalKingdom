@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class MoveSystem : MonoBehaviour
 {
-
+    private PolygonCollider2D polygonCollider;
+    public LayerMask layerMask;
     public float movementSpeed = 6.25f;
     Rigidbody2D rbody;
+
+    private void Start()
+    {
+                
+    }
 
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
+        polygonCollider = GetComponent<PolygonCollider2D>();
+        RaycastHit2D hit;
+
+        Vector2 start = transform.position;
+
+        Vector2 end = start + new Vector2;
     }
     // Update is called once per frame
 

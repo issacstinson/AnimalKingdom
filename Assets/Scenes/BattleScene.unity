@@ -1353,6 +1353,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4826203234202918307}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1705142369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705142364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583e733e76503e84d90d21c9940b487d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 6.25
 --- !u!60 &1705142371
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2019,7 +2032,8 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: 0.25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4826203233056784089, guid: 3141f16b47225a1478921f54e10798a7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3141f16b47225a1478921f54e10798a7, type: 3}
 --- !u!1001 &8066710988555422126
 PrefabInstance:
